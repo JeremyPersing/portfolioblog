@@ -9,26 +9,30 @@ and what goes on during the compilation process.'
 authors: ['default']
 ---
 
-# Building a Compiler by Jeremy Persing
+<YouTube youTubeId="z4amIJrmN6s" />
 
-_Title_: Building a C Compiler
+## Overview
 
-_Author_: Jeremy Persing
+This was the final project that I created for my compiler class.
+The compiler that I built was written in the C language and converts
+a subset of the C language, Baby C, to an intermediary assembly language
+known as ILOC. It works by taking input from a file, then uses a software
+called FLEX to scan the file. After this I generate an LR(1) grammar, I use another
+another software called YACC and an abstract syntax tree (AST) gets created.
+Based off of this AST, I use depth first search and recursion to create ILOC.
+I keep track of variable names and assignments by using a lookup table.
+Due to the nature of this assignment, I used a linked list for the lookup table
+because of it was simple to implement. However, the lookup table would have been
+more efficient if I used a hash table instead. Overall, this project taught me
+a lot about data structures, algorithms, and the compilation process.
+Here's a link to the Github repository if you want to check it out
+[https://github.com/JeremyPersing/baby-c-compiler](https://github.com/JeremyPersing/baby-c-compiler).
 
-_Subject_: Technology
+## What I Learned
 
-_Language_: English
-
-## Introduction
-
-The Time Traveller (for so it will be convenient to speak of him) was
-expounding a recondite matter to us. His pale grey eyes shone and
-twinkled, and his usually pale face was flushed and animated. The fire
-burnt brightly, and the soft radiance of the incandescent lights in the
-lilies of silver caught the bubbles that flashed and passed in our
-glasses. Our chairs, being his patents, embraced and caressed us rather
-than submitted to be sat upon, and there was that luxurious
-after-dinner atmosphere, when thought runs gracefully free of the
-trammels of precision. And he put it to us in this way—marking the
-points with a lean forefinger—as we sat and lazily admired his
-earnestness over this new paradox (as we thought it) and his fecundity.
+- Became more comfortable developing in the C language and using pointers
+- Practical uses for algorithms such as Depth First Search
+- Practical uses for data structures such as linked lists, hash tables, graphs, and trees
+- The compilation process
+- Regular expressions and how to create grammars in code
+- LR(1) and LL(1) parsing

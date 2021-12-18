@@ -1,5 +1,5 @@
 ---
-title: 'CountryFlagsAPI.com'
+title: 'Creating CountryFlagsAPI.com'
 date: '2021-12-17'
 tags: ['APIs', 'Software Engineering', 'Technology']
 draft: false
@@ -7,8 +7,6 @@ summary: 'This is the process of how I built countryflagsapi.com
 and what gave me the inspiration to create it.'
 authors: ['default']
 ---
-
-# CountryFlagsAPI.com by Jeremy Persing
 
 ## Introduction
 
@@ -18,6 +16,11 @@ at the time went offline, so we had to download the 250+ country flags and incor
 into our app. Now this wasn't so bad, but one problem that we faced was that the files were
 downloaded in ISO Alpha-2 format (ex: us.png), while our data was giving us a butchered version
 of ISO Alpha-3 codes to identify countries. This led to having to the time intensive task of translating
-each code from the butchered ISO Alpha-3 to ISO Alpha-2 using a hashmap. I don't want you to have
-to go through that painful and tedious process,
-so that is why [countryflagsapi.com](https://www.countryflagsapi.com) was created.
+each code from the butchered ISO Alpha-3 to ISO Alpha-2 using a hashmap. I fidn't want anyone else to have
+to go thrugh this tedious process so that is why [countryflagsapi.com](https://www.countryflagsapi.com) was created.
+
+## Architecture & Deployment
+
+I used Express to created the backend for the app, and am just serving static html files for the frontend. Being that
+there are only 254 countries, I'm not using any database for the API, so everything is stored locally. The backend is deployed on
+Heroku free tier right now and I'm using Cloudflare's free SSL certificate. I'm also using Cloudflare to manage the DNS.

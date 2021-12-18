@@ -7,7 +7,7 @@ const projectsData = [
      We used React Native for the front end, 
      Express for the backend, and MongoDB for the database.`,
     imgSrc: '/static/images/projectjavelin.png',
-    href: '/blog/the-time-machine',
+    href: '/blog/projects/projectjavelin',
   },
   {
     title: 'CountryFlagsAPI.com',
@@ -16,7 +16,7 @@ const projectsData = [
      country's name, UN Code, ISO Alpha-2 code, or ISO Alpha-3 code.
      It uses an Express backend to host static files.`,
     imgSrc: '/static/images/countryflagsapi.png',
-    href: '/blog/the-time-machine',
+    href: '/blog/projects/countryflagsapi',
   },
   {
     title: 'Interactive and Static Visualizations',
@@ -25,7 +25,7 @@ const projectsData = [
     their poverty levels, and their contributions to climate change. My partner and
     I used d3.js and Tableau to create the visualizations.`,
     imgSrc: '/static/images/visualization2.png',
-    href: '/blog/the-time-machine',
+    href: 'https://finalinteractivedesign.surge.sh/',
   },
   {
     title: 'Interactive Maps',
@@ -33,7 +33,7 @@ const projectsData = [
     answer questions about countries and their relationships with wealth. My partner and I
     used d3.js to create the visualizations, and the data comes from the World Bank.`,
     imgSrc: '/static/images/visualization1.png',
-    href: '/blog/the-time-machine',
+    href: 'https://interactivedesign.surge.sh/',
   },
   {
     title: 'Baby C Compiler',
