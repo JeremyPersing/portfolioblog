@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Jeremy Persing',
   headerTitle: '',
   description:
-    'The portfolio and blog of Jeremy Persing. Here I will show my work and document how I created projects, along with any problems that I ran into and how I solved them.',
+    "The portfolio and blog of Jeremy Persing. Check out some of the things that I've built and some of the lessons that I've learned.",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://jeremypersing.com',

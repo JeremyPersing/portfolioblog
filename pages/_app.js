@@ -1,5 +1,7 @@
 import '@/css/tailwind.css'
 import '@/css/prism.css'
+import React from 'react'
+import { MDXEmbedProvider } from 'mdx-embed'
 
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
