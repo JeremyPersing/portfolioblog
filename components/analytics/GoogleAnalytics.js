@@ -34,3 +34,10 @@ export const logEvent = (action, category, label, value) => {
     value: value,
   })
 }
+
+// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+export const pageview = (url) => {
+  window.gtag('config', siteMetadata.analytics.googleAnalyticsId, {
+    page_path: url,
+  })
+}
