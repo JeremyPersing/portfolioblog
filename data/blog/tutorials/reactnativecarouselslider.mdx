@@ -1,0 +1,65 @@
+---
+title: 'How to Create a React Native Carousel Slider'
+date: '2022-2-11'
+tags: ['React Native', 'Mobile Development', 'Technology']
+draft: false
+summary: 'Learn how to create a carousel slider like the ones you see on Instagram, AirBnB, Zillow, and eBay, using 
+only React Native and Expo.'
+authors: ['default']
+---
+
+<YouTube youTubeId="3DwQf6A49pw&t=72s" />
+
+## Overview
+
+Recently I was looking to create something like this.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img src="/static/images/ebayCarouselSlider.gif" alt="eBay gif" width="250" />
+</div>
+
+After doing some research, I figured out that the best way to achieve this would be to
+not rely on a third party library and just use React Native components to get the job done.
+This is what I ended up creating.
+
+<div style={{ display: 'flex', justifyContent: 'center' }}>
+  <img src="/static/images/carouselSlider.gif" alt="final result" width="250" />
+</div>
+
+If you're looking to create something similar, keep on reading.
+
+## Getting Started
+
+I'm going to assume that you already have your own project setup
+
+## Step 1
+
+Go to [postmail.invotes.com](https://postmail.invotes.com/) and enter your email
+in the input with the placeholder "Your contact email." Press "Go" and check your
+inbox for an access token.
+
+## Step 2
+
+Add the following code to your HTML file.
+
+```html
+<form action="https://postmail.invotes.com/send" method="post" id="email_form">
+  <input type="text" name="subject" placeholder="Subject" />
+  <textarea name="text" placeholder="Message"></textarea>
+  <input type="hidden" name="access_token" value="your_access_token" />
+
+  <input type="hidden" name="success_url" value="." />
+  <input type="hidden" name="error_url" value=".?err=1" />
+
+  <input id="submit_form" type="submit" value="Send" />
+</form>
+```
+
+Then replace the value "your_access_token" with the access token that got
+sent to you. I would also suggest changing the success_url and error_url values
+to the values that are unique to your application.
+
+## Step 3
+
+Add some styles to the new inputs and test it out to make sure that it works. You should
+receive a new email when a new message is sent.
