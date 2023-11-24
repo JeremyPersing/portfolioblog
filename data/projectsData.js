@@ -1,5 +1,22 @@
 const projectsData = [
   {
+    title: 'Revesta.net - Stock Analysis Website',
+    description: `This was the culmination of a few years of software development experience coupled with about a year of learning how to invest.
+I am really proud of how this came out, and it has become my most used tool when looking for investments. I have found some great companies using
+it and am a proud shareholder in a few of them.`,
+    imgSrc: '/static/images/revesta.png',
+    href: '/blog/projects/revesta-net',
+  },
+  {
+    title: 'Apartments.com Clone',
+    description: `I built this project after college where I had to join a team of other students in building out an olympics app in React Native.
+A lot of the tutorials I had come accross while doing this were "half-baked", so I thought I ought to build a real world project and show others how they could do the 
+same.`,
+    imgSrc:
+      'https://user-images.githubusercontent.com/34422870/236663721-883e273d-29a6-4f79-aed9-f8f3c292e19c.png',
+    href: '/blog/projects/apartments-com-clone',
+  },
+  {
     title: 'Project Javelin',
     description: `A hub for all things Olympics for users on any device. 
     I joined with a team of 7 other students at CSU Sacramento to complete 
