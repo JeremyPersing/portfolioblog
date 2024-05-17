@@ -8,7 +8,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://jeremypersing.com',
   siteLogo: '/static/images/jeremypersinglogo.svg',
-  image: '/static/images/portrait.jpg',
+  image: '/static/images/profile.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'jpersing1999@gmail.com',
   github: 'https://github.com/JeremyPersing',
